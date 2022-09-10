@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <script src="https://kit.fontawesome.com/f8d1b1ce75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript form validation</h1>
+    <form class="container">
+        <input type="text" name="" id="name" placeholder="Enter your name" required>
+        <div id="password-field">
+            <input type="password" name="" id="password" placeholder="Enter Password" required>
+            <span id="show"><i class="fas fa-eye"></i></span>
+            <span id="hide"><i class="fas fa-eye-slash"></i></span>
+        </div>
+        <div id="message">
+            <h3>Password must contain the following:</h3>
+            <ul>
+                <li id="letter" class="invalid">At least one lowercase</li>
+                <li id="capital" class="invalid">At least one uppercase</li>
+                <li id="number" class="invalid">At least one number</li>
+                <li id="length" class="invalid">Minimum 8 characters</li>
+            </ul>
+          </div>
+        <input type="email" name="" id="email" placeholder="Enter your email" required>
+        <input type="tel" name="" id="phone" placeholder="Enter your phone number" required>
+        <select name="" id="subjects">
+            <option value="0" disabled selected>select any subject</option>
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JavaScript</option>
+            <option value="4">PHP</option>
+        </select>
+        <textarea name="" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+        <div id="limit"></div>
+        <button id="submit">submit</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

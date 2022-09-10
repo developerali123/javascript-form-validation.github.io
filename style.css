@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border:2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: pink;
+}
+#password-field{
+    position: relative;
+    margin-top: 10px;
+}
+input,select,textarea{
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    margin-top: 10px;
+}
+#password-field input{
+    width:91%;
+}
+#show,#hide{
+    position: absolute;
+    right:15px;
+    top: 33%;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    color: green;
+    background: white;
+}
+#password:valid ~ #show{
+    display:block;
+}
+#limit{
+    color: green;
+}
+#submit{
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background: rgb(11, 236, 105);
+}
+li{
+    list-style: none;
+    font-size: 20px;
+}
+li::before{
+    content: "\f061";
+    font-family: "fontawesome";
+    color:green;
+    margin-right: 10px;
+}
+#message{
+    display: none;
+}
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+color: green;
+}
+
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+color: red;
+}
